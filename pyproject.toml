@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sphinx-sbom-report"
+version = "0.1.0"
+description = "A Sphinx extension to automatically generate a report from a Software Bill of Materials (SBOM) in formats like CycloneDX."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "LGPL-2.1-or-later" }
+authors = [
+  { name="Your Name", email="your@email.com" }, # Placeholder - PLEASE UPDATE
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Framework :: Sphinx :: Extension",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Documentation :: Sphinx",
+    "Topic :: Software Development :: Documentation",
+]
+dependencies = [
+    "sphinx",
+    "Jinja2",
+    "sphinx-autodoc-typehints",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/user/repo" # Placeholder - PLEASE UPDATE
+"Repository" = "https://github.com/user/repo" # Placeholder - PLEASE UPDATE
+
+[tool.setuptools.packages.find]
+where = ["src"]
